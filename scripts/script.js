@@ -12,12 +12,30 @@ const clearPage = (idBlock) => {
     $(`#${idBlock}`).show();
     $('.btn_menu').removeClass("glitched cyberpunk");
     $(`.btn_menu[data-content='${idBlock}']`).addClass("glitched cyberpunk");
-    console.log($(`.btn_menu[data-content='${idBlock}']`));
 }
 
-clearPage(`content_1`);
+const urlParams = new URLSearchParams(window.location.search);
+const myParam = urlParams.get('type');
+
+clearPage(myParam);
 
 $('.btn_menu').click((e) => {
     const content_id = e.target.dataset.content;
-    clearPage(content_id);
+    // clearPage(content_id);
+    document.location.href = `/pages/menu.html?type=${content_id}`;
 });
+
+const workModal = (event, state) => {
+    event.preventDefault();
+    if (state) {
+        $('#modalSection').slideDown(500);
+        $('body').css("overflow", "hidden");
+    } else {
+        $('#modalSection').slideUp(500);
+        $('body').css("overflow", "auto");
+    }
+};
+
+$('.btn_closeModal').click((e) => workModal(e, false));
+
+$('#btn_openModal').click((e) => workModal(e, true));

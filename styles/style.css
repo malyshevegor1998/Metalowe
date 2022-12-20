@@ -237,7 +237,7 @@ img {
 }
 
 .dance__image1 {
-    height: 50%;
+    height: 342px;
 }
 
 .dance__column {
@@ -273,17 +273,14 @@ img {
     flex-direction: column;
 }
 
-.test {
-    padding-top: 100px;
+.container__cocktails {
+    padding-bottom: 5rem;
 }
 
 .dance__container_padding {
     padding-bottom: 1rem;
 }
 
-.dance__container_paddingBottom {
-    padding-bottom: 5rem;
-}
 
 .metaverse__container {
     height: 400px;
@@ -351,4 +348,74 @@ img {
 
 .footer__text_pb {
     padding-bottom: 0.3rem;
+}
+
+#modalSection {
+    display: none;
+}
+
+.modal {
+    background: #000000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.modal__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 5rem 0 2rem 0;
+}
+
+.modal__content-item {
+    padding-bottom: 2rem;
+}
+
+.modal__logo {
+    max-width: 200px;
+}
+
+.modal__header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal__content {
+    padding-top: 2rem;
+}
+
+.modal__content a {
+    font-size: 4rem;
+    display: block;
+}
+
+.modal__footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal__footer p {
+    font-size: 1.5rem;
+}
+
+.modal__footer-icons {
+    display: flex;
+    align-items: center;
+}
+
+.modal__footer-icon {
+    padding-left: 1rem;
+}
+
+.container--fullHeight {
+    height: 100%;
+}
+
+.btn_closeModal {
+    cursor: pointer;
 }

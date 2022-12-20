@@ -3,8 +3,9 @@
 
 <head>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="/Metalowe/styles/style.css" type="text/css" />
-    <link type="Image/x-icon" href="/Metalowe/pict/logo.png" rel="icon">
+    <link rel="stylesheet" href="./styles/style.css" type="text/css" />
+    <link rel="stylesheet" href="./styles/cyberpunk.css" type="text/css" />
+    <link type="Image/x-icon" href="./pict/logo.png" rel="icon">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Metalowe</title>
 </head>
@@ -19,10 +20,7 @@
                     </a>
                 </div>
                 <div class="header__item2">
-                    <p class="header__item2-menu">
-                        Меню
-                    </p>
-                    <a href="#">
+                    <a id="btn_openModal" href="#">
                         <img class="header__item2-burger" src="../pict/index/burger.png" alt="burger">
                     </a>
                 </div>
@@ -276,9 +274,9 @@
 
 
             <div class="dance__text dance__text_right">
-                <h2>Слушайте <br> прекрасную музыку.</h2>
+                <h2>Слушайте <br> прекрасную музыку</h2>
             </div>
-            <div class="dance__container dance__container_padding">
+            <div class="dance__container">
                 <div class="dance__column dance__column_small">
                     <div class="dance__image1 dance__image_border2">
                         <img src="../pict/index/music/music1.png" alt="">
@@ -303,30 +301,31 @@
             </div>
 
 
-
-            <div class="dance__text dance__text_left">
-                <h2>Пейте <br> фантастические коктейли.</h2>
-            </div>
-            <div class="dance__container dance__container_paddingBottom">
-                <div class="dance__column dance__column_large">
-                    <div class="dance__image dance__image_border1">
-                        <img src="../pict/index/cocktails/cock5.png" alt="">
-                    </div>
+            <div class="container__cocktails">
+                <div class="dance__text dance__text_left">
+                    <h2>Пейте <br> фантастические коктейли</h2>
                 </div>
-                <div class="dance__column dance__column_small">
-                    <div class="dance__image1 dance__image_border1">
-                        <img src="../pict/index/cocktails/cock1.png" alt="">
+                <div class="dance__container dance__container_paddingBottom">
+                    <div class="dance__column dance__column_large">
+                        <div class="dance__image dance__image_border1">
+                            <img src="../pict/index/cocktails/cock5.png" alt="">
+                        </div>
                     </div>
-                    <div class="dance__image1 dance__image_border1">
-                        <img src="../pict/index/cocktails/cock2.png" alt="">
+                    <div class="dance__column dance__column_small">
+                        <div class="dance__image1 dance__image_border1">
+                            <img src="../pict/index/cocktails/cock1.png" alt="">
+                        </div>
+                        <div class="dance__image1 dance__image_border1">
+                            <img src="../pict/index/cocktails/cock2.png" alt="">
+                        </div>
                     </div>
-                </div>
-                <div class="dance__column dance__column_small">
-                    <div class="dance__image1 dance__image_border1">
-                        <img src="../pict/index/cocktails/cock3.png" alt="">
-                    </div>
-                    <div class="dance__image1 dance__image_border1">
-                        <img src="../pict/index/cocktails/cock4.png" alt="">
+                    <div class="dance__column dance__column_small">
+                        <div class="dance__image1 dance__image_border1">
+                            <img src="../pict/index/cocktails/cock3.png" alt="">
+                        </div>
+                        <div class="dance__image1 dance__image_border1">
+                            <img src="../pict/index/cocktails/cock4.png" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -410,6 +409,65 @@
             </div>
         </div>
     </footer>
+
+    <section id="modalSection" class="modal">
+        <div class="container container--fullHeight">
+            <div class="modal__container">
+                <div class="modal__header">
+                    <div class="modal__logo">
+                        <img src="./pict/index/metalowe.png" alt="">
+                    </div>
+                    <div class="modal__cross">
+                        <img class="btn_closeModal" src="./pict/index/cross.png" alt="">
+                    </div>
+                </div>
+                <div class="modal__content">
+                    <div class="modal__content-item">
+                        <a class="cyberpunk glitched btn_closeModal" href="">Главная</a>
+                    </div>
+                    <div class="modal__content-item">
+                        <a class="cyberpunk glitched" href="./pages/menu.html?type=cocktails">Меню</a>
+                    </div>
+                    <div class="modal__content-item">
+                        <a class="cyberpunk glitched" href="">Фото</a>
+                    </div>
+                    <div class="modal__content-item">
+                        <a class="cyberpunk glitched" href="">Контакты</a>
+                    </div>
+                </div>
+                <div class="modal__footer">
+                    <div class="modal__footer-address">
+                        <p>г. Оренбург, Загородное шоссе 36/2с5</p>
+                    </div>
+                    <div class="modal__footer-number">
+                        <p>+7 (995) 774-54-77</p>
+                    </div>
+                    <div class="modal__footer-icons">
+                        <div class="modal__footer-icon">
+                            <a href="">
+                                <img src="../pict/index/logos/4.png" alt="">
+                            </a>
+                        </div>
+                        <div class="modal__footer-icon">
+                            <a href="">
+                                <img src="../pict/index/logos/3.png" alt="">
+                            </a>
+                        </div>
+                        <div class="modal__footer-icon">
+                            <a href="">
+                                <img src="../pict/index/logos/1.png" alt="">
+                            </a>
+                        </div>
+                        <div class="modal__footer-icon">
+                            <a href="">
+                                <img src="../pict/index/logos/2.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </section>
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
